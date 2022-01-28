@@ -1,0 +1,15 @@
+.taskWrapper {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.taskWrapper__text {
+  font-size: 1.4rem;
+  color: #2b2e43;
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.todoWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 460px;
+  padding: 4rem 2rem;
+}
+
+.todoWrapper h1 {
+  color: #FFF;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #FFF;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.todoWrapper__tasks {
+  padding-top: 2rem;
+  border-top: 1px solid #FFF;
+}
