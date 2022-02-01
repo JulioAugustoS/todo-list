@@ -1,13 +1,12 @@
 import React from "react";
-import "./styles.css";
+
+import { ButtonWrapper } from "./styles";
 
 const Button = ({ title, ...props }) => {
   return (
-    <div className="buttonWrapper">
-      <button className="buttonWrapper__button" {...props}>
-        {title}
-      </button>
-    </div>
+    <ButtonWrapper>
+      <button {...props}>{title}</button>
+    </ButtonWrapper>
   );
 };
 

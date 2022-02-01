@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./styles/App.css";
 import { Input, Button, Task } from "./components";
 
@@ -21,6 +21,12 @@ const App = () => {
     }
   };
 
+  const handleDeleteTask = (item) => {
+    const othersTasks = tasks.filter((task) => task !== item);
+
+    setTasks(othersTasks);
+  };
+
   return (
     <div className="todoWrapper">
       <form onSubmit={handleAddTask}>
@@ -35,7 +41,11 @@ const App = () => {
 
       <ul className="todoWrapper__tasks">
         {tasks.map((item, index) => (
-          <Task key={index} title={item} />
+          <Task
+            key={index}
+            title={item}
+            onDelTask={() => handleDeleteTask(item)}
+          />
         ))}
       </ul>
     </div>
